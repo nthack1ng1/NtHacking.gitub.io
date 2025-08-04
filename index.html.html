@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="az"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NT Hacking</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #468004, #4a7cd8,  #c71313);
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+        header, footer {
+            background-color: rgba(0, 0, 0, 0.6);
+            text-align: center;
+            padding: 20px 10px;
+            transition: transform 0.4s ease, background-color 0.4s ease;
+        }
+
+        header:hover, footer:hover {
+            transform: scale(1.03);
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            
+            button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+            }
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #fff;
+            transition: color 0.4s, transform 0.3s;
+            
+            button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+            }
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            transform: scale(1.1);
+        }
+
+        section {
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            z-index: -1;
+            filter: blur(30px);
+            border-radius: 20px;
+        }
+
+        #haqqinda, #xidmetler, #elaqe,#reviews{
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+            transition: box-shadow 0.4s ease, transform 0.4s ease;
+        }
+
+        #haqqinda:hover, #xidmetler:hover, #elaqe:hover, #reviews:hover  {
+            box-shadow: 0 8px 40px rgba(0, 0, 0, 0.8);
+            transform: scale(1.05);
+        }
+
+        button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+        }
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        ul {
+            text-align: left;
+            margin: auto;
+            max-width: 600px;
+            list-style: none;
+            padding: 0;
+            
+            button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+            }
+            
+    
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        ul li {
+            padding: 10px;
+            margin: 10px 0;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            
+            button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+            }
+
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+        
+
+        ul li:hover {
+            transform: translateX(15px);
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #ffd700;
+            
+            button, .contact-buttons a {
+            background-color: #fffb00 ;
+            color: #333;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin: 15px;
+            }
+
+        button:hover, .contact-buttons a:hover {
+            background-color: #00bdf7;
+            transform: translateY(-5px) scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        img {
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+            align-tracks: left;
+        }
+
+        img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 10px 0;
+            }
+
+            section {
+                padding: 20px 10px;
+            }
+
+            button {
+                padding: 10px 20px;
+                font-size: 0.9em;
+            }
+        }
+    </style>
+    <link href="./IT Şirkətimiz_files/css2" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="IT Şirkətimiz.html"><img src="Untitled.jpeg" alt="NT Hacking" width="100", height="100",text-align='left' ></a>
+        <h1>NT Hacking IT Şirkətimizə Xoş Gəlmisiniz</h1>
+    </header>
+    <nav>
+        
+        <a href="#haqqinda">Haqqında</a>
+        <a href="#xidmetler">Xidmətlər</a>
+        <a href="#reviews">Müştəri Rəyləri</a>
+        <a href="#elaqe">Əlaqə</a>
+    </nav>
+    <section id="haqqinda">
+        <h2>Haqqımızda</h2>
+        <p>Biz müasir və kreativ IT həlləri təqdim edən lider şirkətik! Gənc və dinamik bir komanda olaraq, peşəkar mütəxəssislərimiz ilə müştərilərimizin ehtiyaclarına uyğun fərdi həllər təqdim edirik.</p>
+    </section>
+    <section id="xidmetler">
+        <h2>Xidmətlərimiz</h2>
+        <ul>
+            <li>Veb saytların hazırlanması və dizaynı</li>
+            <li>Mobil tətbiqlərin inkişafı</li>
+            <li>Fərdi proqram təminatı</li>
+            <li>Tərcümə xidmətləri</li>
+            <li>Front-end inkişafı</li>
+            <li>cv elektron cədvəl və digər sənədlərin hazırlanması</li>
+            
+        </ul>
+    </section>
+    <section id="reviews">
+        <h2>Müştəri Rəyləri</h2>
+        <p>"Ən yaxşı IT xidmətlərindən biri! Həmişə güvənilir və dəqiqdir." - Nigar Əliyeva</p>
+        <p>"Mükəmməl işlər gördülər, işimizin inkişafına böyük töhfə verdilər." - Elvin Məmmədov</p>
+    </section>
+    <section id="elaqe">
+        <h2>Əlaqə</h2>
+        <p>Email: nthack1ng1@gmail.com</p>
+        <p></p><h3 style="color: red;">Əlaqə nömrəsi</h3>
+        <p>+994 70 413 57 10</p>
+        <div class="contact-buttons">
+            <a href="https://wa.me/9944135710" target="_blank">Whatsapp</a>
+            <a href="tel:+9944135710">Zəng edin</a>
+        </div>
+    </section>
+    <footer>
+        <p>© 2025 NT Hacking. Murad Qəhrəmanov tərəfindən təsis edilmişdir. Bütün hüquqlar qorunur.</p>
+        <p><b><h1 style="color: gold;font-family:'Times New Roman', Times, serif, Times, serif;border: black;"><b>"Code The Future With NT HACKING"</b></h1></p>
+        <p><h3>"NT HACKING ilə gələcəyi kodla"</h3></p>
+    </footer>
+
+
+</body></html>
